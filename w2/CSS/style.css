@@ -1,0 +1,25 @@
+h1{
+    color:blue;
+}
+
+.red{
+    color:red;
+}
+
+
+.large-font{
+    font-size: 40px;
+}
+
+.medium-font{
+    font-size: 20px;
+}
+
+.box{
+    background-color:lightgray;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: solid 2px gray;
+}
