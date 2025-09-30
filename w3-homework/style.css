@@ -1,0 +1,117 @@
+html {
+	background-color: #EDF2C5;
+}
+
+*,*:before,*:after {
+	box-sizing: inherit
+}
+
+header{
+    display: flex; /*讓header變成彈性盒模型*/
+    justify-content: space-between; /*水平左右兩邊對齊*/
+    align-items: center; /*垂直置中對齊*/
+    width: 1122px;
+    height: 62px;
+    margin-left: auto; /*自動左邊距*/
+    margin-right: auto; /*自動右邊距*/
+    margin-top: 36px; /*上邊距36px*/
+}
+
+.header-left {
+    width: 253px;
+    height: 60px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 59.93px;
+    color: #778A50;
+    font-family: "Noto Sans";
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    color: #778A50;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+}
+
+.login{
+    font-weight: 700;
+    border-radius: 3px;
+    border: 1px solid #778A50;
+    padding: 4px 8px;
+    margin-left: 12px;
+}
+
+.join{
+    font-weight: 700;
+    border-radius: 3px;
+    border: 1px solid #778A50;
+    padding: 4px 8px;
+    margin-left: 12px;
+}
+
+.fb{
+    width: 24px;
+    height: 24px;
+}
+
+.ig{
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+}
+
+.line{
+    margin-left: 12px;
+    height: 24px;
+    border: 0.5px solid #778A50;
+}
+
+body{
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.nav{
+    width: 1120px;
+    height: 44px;
+    margin-left: auto; /*自動左邊距*/
+    margin-right: auto; /*自動右邊距*/
+    margin-top: 10px;
+}
+
+.nav-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #778A50;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 5px;
+}
+
+.nav-link{
+    display: block;
+    color: #EDF2C5;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-bottom: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #778A50;
+    color: #EDF2C5;
+    height: 60px;
+    margin-top: 117px;
+    font-size: 12px;
+}
+
+
