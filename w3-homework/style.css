@@ -1,3 +1,4 @@
+
 html {
 	background-color: #EDF2C5;
 }
@@ -8,12 +9,12 @@ html {
 
 header{
     display: flex; /*讓header變成彈性盒模型*/
-    justify-content: space-between; /*水平左右兩邊對齊*/
-    align-items: center; /*垂直置中對齊*/
+    justify-content: space-between; /*水平左右兩邊對齊 -|*/
+    align-items: center; /*垂直置中對齊|-*/
     width: 1122px;
     height: 62px;
-    margin-left: auto; /*自動左邊距*/
-    margin-right: auto; /*自動右邊距*/
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 36px; /*上邊距36px*/
 }
 
@@ -22,7 +23,8 @@ header{
     height: 60px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 59.93px;
+    line-height: 100%;
+    letter-spacing: 0%;
     color: #778A50;
     font-family: "Noto Sans";
 }
@@ -30,6 +32,7 @@ header{
 .header-right {
     display: flex;
     align-items: center;
+    width: 208px;
     height: 24px;
     color: #778A50;
     font-size: 14px;
@@ -42,7 +45,7 @@ header{
     border-radius: 3px;
     border: 1px solid #778A50;
     padding: 4px 8px;
-    margin-left: 12px;
+    margin-left: 12px; 
 }
 
 .join{
@@ -61,13 +64,13 @@ header{
 .ig{
     width: 24px;
     height: 24px;
-    margin-left: 12px;
+    margin-left: 12px;/*36-24=12px*/
 }
 
 .line{
-    margin-left: 12px;
+    margin-left: 12px; /*72-24-24-12=12px*/
     height: 24px;
-    border: 0.5px solid #778A50;
+    border: 1px solid #778A50;
 }
 
 body{
@@ -81,6 +84,7 @@ body{
     margin-left: auto; /*自動左邊距*/
     margin-right: auto; /*自動右邊距*/
     margin-top: 10px;
+    
 }
 
 .nav-list{
@@ -88,6 +92,8 @@ body{
     margin: 0;
     padding: 0;
     background-color: #778A50;
+    border-radius: 3px;
+    font-weight: 700;
 }
 
 .nav-item{
@@ -101,6 +107,93 @@ body{
     text-decoration: none;
     padding: 10px 20px;
     border-bottom: none;
+}
+
+.pumpkin{
+    width: 1120px;
+    height: 448px;
+    margin-left: auto; /*自動左邊距*/
+    margin-right: auto; /*自動右邊距*/
+    margin-top: 20px;
+}
+
+.constant{ 
+    width: 1120px;           /* ✅ 和 nav、pumpkin 一樣 */
+    margin: 20px auto;       /* ✅ 上下 20px，左右置中 */
+    display: grid;           /* ✅ 用 grid 方便兩欄布局 */
+    grid-template-columns: 1fr 1fr; /* ✅ 左右各一欄 */
+    gap: 20px;               /* ✅ 左右間距 */  
+}
+
+.constant-left{
+    /*color: #F7FBDA; 
+    padding: 8px 0px 8px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700; */
+    display: flex;
+    flex-direction: column;
+}
+
+.constant-left-text {
+    /*color: #F7FBDA;
+    background-color: #778a50;
+    padding: 8px 0px 8px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 150%;*/
+    color: #F7FBDA;
+    background-color: #778a50;
+    padding: 8px 0px 8px 20px;
+    border-radius: 3px 3px 0 0; /* 上方圓角 */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.constant-left-img {
+    /*display: flex;
+    gap: 12px; 
+    margin-top: 12px;
+    background-color: #EDF2C5;*/
+    display: flex;
+    gap: 12px;
+    padding: 15px;   /* ✅ 和右邊文字框一樣有內縮 */
+    background-color: #F7FBDA;  /* ✅ 米黃色底 */
+    border-radius: 0 0 3px 3px; /* 下方圓角 */
+
+}
+
+.constant-left-img-item {
+    /*width: 160px;
+    height: auto;
+    object-fit: cover;*/
+    width: 160px;
+    height: auto;
+    object-fit: cover;
+}
+
+.constant-right-text{
+    background-color: #778a50;
+    color: #F7FBDA;
+    padding: 8px 0px 8px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.constant-right-smalltext {
+    color: #7D7D7D;
+    background-color: #F7FBDA;
+    padding: 15px;         /* ✅ 內縮，文字不會貼邊 */
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.constant-right-smalltext .line2 {
+    border: none;
+    border-bottom: 1px solid #ccc; /* ✅ 分隔線 */
+    margin: 12px 0;
 }
 
 .footer{
