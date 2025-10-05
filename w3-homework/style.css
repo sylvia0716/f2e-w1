@@ -32,7 +32,7 @@ header {
     line-height: 100%;
     letter-spacing: 0%;
     color: #778A50;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans", sans-serif;
 }
 
 .header-right {
@@ -128,7 +128,7 @@ body {
     /*自動左邊距*/
     margin-right: auto;
     /*自動右邊距*/
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 100px;
     font-weight: 700;
     font-size: 24px;
